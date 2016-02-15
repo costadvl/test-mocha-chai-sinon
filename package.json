@@ -1,0 +1,25 @@
+{
+  "name": "testing-enviroment",
+  "version": "1.0.0",
+  "description": "Testing enviroment using mocha, chai and sinon",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R list -b"
+  },
+  "keywords": [
+    "testing",
+    "mocha",
+    "chai",
+    "sinon",
+    "costa"
+  ],
+  "author": "Vadim Melenciuc",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
