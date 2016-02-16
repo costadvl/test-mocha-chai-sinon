@@ -1,6 +1,7 @@
 var getPalette = require('../lib/getPalette');
 var assert = require('chai').assert;
 var should = require('chai').should();
+var expect = require('chai').expect;
 var fs = require('fs');
 
 var configFile = process.cwd()+"/config.json";
@@ -25,7 +26,9 @@ describe('getPalette', function () {
     
     it("Should throw an error if the result is not an array",function (done) {
         writeConfig({palette: "string"}, function (err) {
-            assert.throws(getPalette, /is not an array/);
+            
+            expect(getPalette).to.throw(/is not an array/);
+            // assert.throws(getPalette, /is not an array/);
             done();
         });
     });
