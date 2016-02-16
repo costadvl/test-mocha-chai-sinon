@@ -4,7 +4,7 @@
   "description": "Testing enviroment using mocha, chai and sinon",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R list -b"
+    "test": "./node_modules/.bin/mocha -R list -b"
   },
   "keywords": [
     "testing",
